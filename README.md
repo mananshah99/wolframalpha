@@ -1,4 +1,4 @@
-[wolframalpha](tiny.cc/wolframapp)
+[Wolfram Alpha](tiny.cc/wolframapp)
 ============
 
-Wolfram|Alpha Chrome Extension
+Wolfram|Alpha Chrome Extension (popup quick search utility)
