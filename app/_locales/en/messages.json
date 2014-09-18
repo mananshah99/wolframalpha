@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "wolframalpha",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "A WolframAlpha Engine popup chrome extension",
+    "description": "The description of the application"
+  }
+}
