@@ -1,0 +1,117 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   'C:\\Users\\Manan\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'generator-chrome-extension' ]
+2 info using npm@1.4.26
+3 info using node@v0.10.28
+4 verbose cache add [ 'generator-chrome-extension', null ]
+5 verbose cache add name=undefined spec="generator-chrome-extension" args=["generator-chrome-extension",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'generator-chrome-extension',
+6 verbose parsed url   path: 'generator-chrome-extension',
+6 verbose parsed url   href: 'generator-chrome-extension' }
+7 silly lockFile fcfe2b79-generator-chrome-extension generator-chrome-extension
+8 verbose lock generator-chrome-extension C:\Users\Manan\AppData\Roaming\npm-cache\fcfe2b79-generator-chrome-extension.lock
+9 silly lockFile fcfe2b79-generator-chrome-extension generator-chrome-extension
+10 silly lockFile fcfe2b79-generator-chrome-extension generator-chrome-extension
+11 verbose addNamed [ 'generator-chrome-extension', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 4f45b217-generator-chrome-extension generator-chrome-extension@
+14 verbose lock generator-chrome-extension@ C:\Users\Manan\AppData\Roaming\npm-cache\4f45b217-generator-chrome-extension.lock
+15 silly addNameRange { name: 'generator-chrome-extension',
+15 silly addNameRange   range: '*',
+15 silly addNameRange   hasData: false }
+16 verbose registry.get https://registry.npmjs.org/generator-chrome-extension not expired, no request
+17 silly addNameRange number 2 { name: 'generator-chrome-extension', range: '*', hasData: true }
+18 silly addNameRange versions [ 'generator-chrome-extension',
+18 silly addNameRange   [ '0.1.0',
+18 silly addNameRange     '0.1.1',
+18 silly addNameRange     '0.2.0',
+18 silly addNameRange     '0.2.1',
+18 silly addNameRange     '0.2.2',
+18 silly addNameRange     '0.2.3',
+18 silly addNameRange     '0.2.4',
+18 silly addNameRange     '0.2.5',
+18 silly addNameRange     '0.2.6',
+18 silly addNameRange     '0.2.7',
+18 silly addNameRange     '0.2.8',
+18 silly addNameRange     '0.2.9' ] ]
+19 verbose addNamed [ 'generator-chrome-extension', '0.2.9' ]
+20 verbose addNamed [ '0.2.9', '0.2.9' ]
+21 silly lockFile 08d4591f-generator-chrome-extension-0-2-9 generator-chrome-extension@0.2.9
+22 verbose lock generator-chrome-extension@0.2.9 C:\Users\Manan\AppData\Roaming\npm-cache\08d4591f-generator-chrome-extension-0-2-9.lock
+23 silly lockFile 08d4591f-generator-chrome-extension-0-2-9 generator-chrome-extension@0.2.9
+24 silly lockFile 08d4591f-generator-chrome-extension-0-2-9 generator-chrome-extension@0.2.9
+25 silly lockFile 4f45b217-generator-chrome-extension generator-chrome-extension@
+26 silly lockFile 4f45b217-generator-chrome-extension generator-chrome-extension@
+27 silly resolved [ { name: 'generator-chrome-extension',
+27 silly resolved     version: '0.2.9',
+27 silly resolved     description: 'Yeoman generator for Chrome Extensions',
+27 silly resolved     keywords: [ 'yeoman-generator', 'chrome', 'extension', 'addon' ],
+27 silly resolved     author: { name: 'The Yeoman Team' },
+27 silly resolved     main: 'app/index.js',
+27 silly resolved     repository:
+27 silly resolved      { type: 'git',
+27 silly resolved        url: 'git://github.com/yeoman/generator-chrome-extension.git' },
+27 silly resolved     scripts: { test: 'mocha --reporter spec' },
+27 silly resolved     dependencies: { 'yeoman-generator': '^0.17.0' },
+27 silly resolved     peerDependencies: { 'generator-mocha': '>=0.1.1', yo: '>=1.0.0' },
+27 silly resolved     devDependencies: { mocha: '*', underscore: '^1.6.0' },
+27 silly resolved     engines: { node: '>=0.10.0', npm: '>=1.2.10' },
+27 silly resolved     licenses: [ [Object] ],
+27 silly resolved     readme: '# Chrome Extension generator [![Build Status](https://secure.travis-ci.org/yeoman/generator-chrome-extension.svg?branch=master)](http://travis-ci.org/yeoman/generator-chrome-extension)\n\nMaintainer: [Jimmy Moon](https://github.com/ragingwind)\n\n> Chrome Extension generator that creates everything you need to get started with extension development. You can choose Browser UI(Browser,Page Action, Omnibox) type and select into permissions what you need.\n\n## Getting Started\n\n- First make a new directory, and `cd` into it: mkdir my-new-chrome-extension && cd $_\n- Install the generator: `npm install -g generator-chrome-extension`\n- Run: `yo chrome-extension`, optionally passing an extension name: yo chrome-extension [extension-name]\n\nNeed more information about Chrome Extension? Please visit [Google Chrome Extension Develpment](http://developer.chrome.com/extensions/devguide.html)\n\n![](http://recordit.co/H5y0XHYwgf.gif)\n\n## Generators\n\nAvailable generators:\n\n* [chrome-extension](#app) (aka [chrome-extension:app](#app))\n\n### App\n\nSets up a new Chrome Extension, generating all the boilerplate you need to get started.\n\nExample:\n```bash\nyo chrome-extension\n```\n\n## Test Chrome Extension\n\nTo test, go to: chrome://extensions, enable Developer mode and load app as an unpacked extension.\n\n## Debug\n\nSupport for LiveReload\n\nExample:\n```bash\ngrunt debug\n```\n\n## Build & Package\n\nBy default, generators compress the file that was created by building a js/css/html/resource file. You can distribute the compressed file using the Chrome Developer Dashboard to publish to the Chrome Web Store.\n\nRun this command to build your Chrome Extension project.\n\nExample:\n```bash\ngrunt build\n```\n\n## Options\n\n* `--skip-install`\n\n  Skips the automatic execution of `bower` and `npm` after\n  scaffolding has finished.\n\n* `--test-framework=[framework]`\n\n  Defaults to `mocha`. Can be switched for\n  another supported testing framework like `jasmine`.\n\n* `--coffee`\n\n  Add support for [CoffeeScript](http://coffeescript.org/).\n\n* `--compass`\n\n  Add support for [Compass](http://compass-style.org/).\n\n > WARN, Compiled files that generated by coffee or compass will be remained if your Chrome App is running on Chrome App container (with `grunt debug`). You should remove or ignore that files if you don\'t want to commit to repo.\n\n## Contribute\n\nSee the [contributing docs](https://github.com/yeoman/yeoman/blob/master/contributing.md)\n\n## License\n\n[BSD license](http://opensource.org/licenses/bsd-license.php)\n',
+27 silly resolved     readmeFilename: 'readme.md',
+27 silly resolved     bugs: { url: 'https://github.com/yeoman/generator-chrome-extension/issues' },
+27 silly resolved     homepage: 'https://github.com/yeoman/generator-chrome-extension',
+27 silly resolved     _id: 'generator-chrome-extension@0.2.9',
+27 silly resolved     _shasum: 'a57acdff9c08a230d2c0b99d23f90311744d7401',
+27 silly resolved     _from: 'generator-chrome-extension@',
+27 silly resolved     _resolved: 'https://registry.npmjs.org/generator-chrome-extension/-/generator-chrome-extension-0.2.9.tgz' } ]
+28 info install generator-chrome-extension@0.2.9 into C:\Program Files\nodejs
+29 info installOne generator-chrome-extension@0.2.9
+30 verbose node_modules\generator-chrome-extension unbuild
+31 verbose tar unpack C:\Users\Manan\AppData\Roaming\npm-cache\generator-chrome-extension\0.2.9\package.tgz
+32 silly lockFile d928e936-dules-generator-chrome-extension tar://C:\Program Files\nodejs\node_modules\generator-chrome-extension
+33 verbose lock tar://C:\Program Files\nodejs\node_modules\generator-chrome-extension C:\Users\Manan\AppData\Roaming\npm-cache\d928e936-dules-generator-chrome-extension.lock
+34 silly lockFile 953ffc8a-rome-extension-0-2-9-package-tgz tar://C:\Users\Manan\AppData\Roaming\npm-cache\generator-chrome-extension\0.2.9\package.tgz
+35 verbose lock tar://C:\Users\Manan\AppData\Roaming\npm-cache\generator-chrome-extension\0.2.9\package.tgz C:\Users\Manan\AppData\Roaming\npm-cache\953ffc8a-rome-extension-0-2-9-package-tgz.lock
+36 silly gunzTarPerm modes [ '777', '666' ]
+37 error Error: EPERM, mkdir 'C:\Program Files\nodejs\node_modules\generator-chrome-extension'
+37 error  { [Error: EPERM, mkdir 'C:\Program Files\nodejs\node_modules\generator-chrome-extension']
+37 error   errno: 50,
+37 error   code: 'EPERM',
+37 error   path: 'C:\\Program Files\\nodejs\\node_modules\\generator-chrome-extension',
+37 error   fstream_type: 'Directory',
+37 error   fstream_path: 'C:\\Program Files\\nodejs\\node_modules\\generator-chrome-extension',
+37 error   fstream_class: 'DirWriter',
+37 error   fstream_stack:
+37 error    [ 'C:\\Users\\Manan\\AppData\\Roaming\\npm\\node_modules\\npm\\node_modules\\fstream\\lib\\dir-writer.js:36:23',
+37 error      'C:\\Users\\Manan\\AppData\\Roaming\\npm\\node_modules\\npm\\node_modules\\mkdirp\\index.js:46:53',
+37 error      'Object.oncomplete (fs.js:107:15)' ] }
+38 error Please try running this command again as root/Administrator.
+39 error System Windows_NT 6.1.7601
+40 error command "node" "C:\\Users\\Manan\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "generator-chrome-extension"
+41 error cwd C:\Users\Manan\Desktop\wolframalpha
+42 error node -v v0.10.28
+43 error npm -v 1.4.26
+44 error path C:\Program Files\nodejs\node_modules\generator-chrome-extension
+45 error fstream_path C:\Program Files\nodejs\node_modules\generator-chrome-extension
+46 error fstream_type Directory
+47 error fstream_class DirWriter
+48 error code EPERM
+49 error errno 50
+50 error stack Error: EPERM, mkdir 'C:\Program Files\nodejs\node_modules\generator-chrome-extension'
+51 error fstream_stack C:\Users\Manan\AppData\Roaming\npm\node_modules\npm\node_modules\fstream\lib\dir-writer.js:36:23
+51 error fstream_stack C:\Users\Manan\AppData\Roaming\npm\node_modules\npm\node_modules\mkdirp\index.js:46:53
+51 error fstream_stack Object.oncomplete (fs.js:107:15)
+52 verbose exit [ 50, true ]
